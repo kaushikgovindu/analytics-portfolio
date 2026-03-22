@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Analytics Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a365d 0%, #2d5a8c 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .project-intro {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .project-intro h2 {
+            color: #1a365d;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .project-intro p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .project-intro ul {
+            margin-left: 20px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .project-intro li {
+            margin-bottom: 8px;
+        }
+        
+        .tech-stack {
+            background: #f0f4f8;
+            padding: 20px;
+            border-left: 4px solid #2d5a8c;
+            margin: 20px 0;
+        }
+        
+        .tech-stack h3 {
+            color: #1a365d;
+            margin-bottom: 10px;
+        }
+        
+        .tech-stack ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .tech-stack li:before {
+            content: "✓ ";
+            color: #2d5a8c;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .dashboard-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .dashboard-section h3 {
+            color: #1a365d;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-bottom: 2px solid #2d5a8c;
+            padding-bottom: 10px;
+        }
+        
+        .dashboard-section p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .dashboard-section img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        .caption {
+            font-size: 0.95em;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 3px solid #2d5a8c;
+            border-radius: 4px;
+        }
+        
+        .insights {
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        .insights h4 {
+            color: #1a365d;
+            margin-bottom: 10px;
+        }
+        
+        .insights ul {
+            list-style-position: inside;
+            color: #555;
+        }
+        
+        .insights li {
+            margin-bottom: 8px;
+        }
+        
+        .links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2d5a8c;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #1a365d;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Supply Chain Analytics Portfolio</h1>
+        <p>Retail KPI Reporting & Operational Intelligence</p>
+    </header>
+    
+    <div class="container">
+        <!-- Project Overview -->
+        <div class="project-intro">
+            <h2>📊 Project Overview</h2>
+            <p>
+                A comprehensive <strong>end-to-end supply chain analytics solution</strong> for a national office supplies retailer operating multiple fulfillment centers and retail stores. This project demonstrates the ability to transform raw transactional data into actionable business intelligence for Operations, Replenishment, and Transportation teams.
+            </p>
+            
+            <p><strong>Business Problem:</strong> The supply chain organization needed unified KPI visibility across three critical areas:</p>
+            <ul>
+                <li><strong>Inventory Performance:</strong> Stockouts are costing margin; need to optimize fill rates by region and FC.</li>
+                <li><strong>Fulfillment Efficiency:</strong> On-time delivery and perfect order % drive customer satisfaction and cost.</li>
+                <li><strong>Transportation Spend:</strong> Cost per unit is climbing; need to identify high-cost lanes and carrier performance.</li>
+            </ul>
+            
+            <div class="tech-stack">
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li>Python (Pandas) – Synthetic data generation</li>
+                    <li>SQL (SQLite) – Data warehouse & KPI calculations</li>
+                    <li>Power BI – Interactive dashboards & reporting</li>
+                    <li>Git / GitHub – Version control & documentation</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Executive Summary Dashboard -->
+        <div class="dashboard-section">
+            <h3>1. Executive Summary Dashboard</h3>
+            <p>
+                High-level operational snapshot for C-level and operations leaders. Tracks four critical KPIs aggregated across all fulfillment centers and retail regions.
+            </p>
+            
+            <img src="exec-summary.png" alt="Executive Summary Dashboard">
+            
+            <div class="caption">
+                <strong>Executive KPI View:</strong> Stockout Rate (181.96K aggregate %), On-Time Delivery (754.73K %), Transport Cost per Unit (231.97K). Line chart shows Fill Rate % trend across Eastern and Western regions (2024–2026). Year-to-date regional breakdown reveals Eastern region at 187K vs. Western at 80K.
+            </div>
+            
+            <div class="insights">
+                <h4>💡 Key Insights Shown:</h4>
+                <ul>
+                    <li><strong>Stockout Risk:</strong> 181.96K cumulative stockout rate indicates pockets of high inventory risk; Eastern region more volatile.</li>
+                    <li><strong>Strong On-Time Delivery:</strong> 754.73K on-time delivery % reflects solid logistics execution, but regional variance suggests optimization opportunity.</li>
+                    <li><strong>Transportation Cost Pressure:</strong> 231.97K transport cost per unit is the third-highest operational pressure point; concentrate on high-volume lanes.</li>
+                    <li><strong>Regional Trend:</strong> Fill rate trending upward 2024→2026 in both regions, but Eastern showing steeper recovery curve (strategic priority).</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- FC Performance Dashboard -->
+        <div class="dashboard-section">
+            <h3>2. Fulfillment Center Performance Dashboard</h3>
+            <p>
+                Drill-down view for Operations and FC managers. Breaks down inventory fill rate and perfect order performance by individual fulfillment center and store region.
+            </p>
+            
+            <img src="fc-performance.png" alt="Fulfillment Center Performance Dashboard">
+            
+            <div class="caption">
+                <strong>FC Performance View:</strong> Dual bar charts compare Fill Rate % and Perfect Order % across all fulfillment centers, segmented by Eastern and Western regions. Identifies underperforming FCs and regional disparities.
+            </div>
+            
+            <div class="insights">
+                <h4>💡 Key Insights Shown:</h4>
+                <ul>
+                    <li><strong>FC Variance:</strong> Reveals which fulfillment centers are lagging; enables targeted operational improvements.</li>
+                    <li><strong>Perfect Order Correlation:</strong> Strong fill rate doesn't guarantee perfect orders; on-time + damage-free is a separate metric.</li>
+                    <li><strong>Regional Pattern:</strong> Eastern region tends to underperform on both metrics; likely due to volume spikes or staffing constraints.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Replenishment Dashboard -->
+        <div class="dashboard-section">
+            <h3>3. Replenishment & Inventory Dashboard</h3>
+            <p>
+                Tactical view for Replenishment and Supply Planning teams. Focuses on inventory turnover, days of supply, and SKU-level stockout frequency by region and product category.
+            </p>
+            
+            <img src="replenishment.png" alt="Replenishment Dashboard">
+            
+            <div class="caption">
+                <strong>Replenishment View:</strong> Tracks inventory turnover, days of supply, and stockout events by product category and store region. Highlights which SKUs and regions are most prone to stockouts and slow-moving inventory.
+            </div>
+            
+            <div class="insights">
+                <h4>💡 Key Insights Shown:</h4>
+                <ul>
+                    <li><strong>Stockout Hotspots:</strong> Identifies SKUs and regions with chronic stockouts; enables prioritized replenishment rules.</li>
+                    <li><strong>Inventory Efficiency:</strong> Days of supply metric balances working capital against service level.</li>
+                    <li><strong>Lead-Time Impact:</strong> Longer lead-time items show higher stockout risk; consider safety stock buffers.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Data Model & Methodology -->
+        <div class="project-intro">
+            <h2>🏗️ Data Model & Methodology</h2>
+            <p><strong>Data Source:</strong> Synthetic data generated with realistic distributions (lead times, demand patterns, supplier performance).</p>
+            <p><strong>Data Warehouse:</strong> SQLite database with normalized schema (Orders, Inventory, Shipments, Suppliers, Products, Stores, FCs).</p>
+            <p><strong>KPI Calculations:</strong> SQL views compute all metrics (fill rate, on-time %, perfect order %, days of supply, transport cost).</p>
+            <p><strong>Dashboard Refresh:</strong> Power BI DirectQuery mode pulls from SQL; supports daily refresh cycles.</p>
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="project-intro">
+            <h2>📁 Access the Project</h2>
+            <p>This portfolio is built on <strong>synthetic but realistic data</strong> to demonstrate data modeling and visualization capabilities without exposing proprietary retailer information.</p>
+            
+            <div class="links">
+                <a href="https://github.com/kaushikgovindu/retail-supply-chain-analytics" class="btn">📘 View on GitHub</a>
+                <a href="https://github.com/kaushikgovindu/retail-supply-chain-analytics/blob/main/README.md" class="btn">📖 Full Documentation</a>
+                <a href="https://github.com/kaushikgovindu/retail-supply-chain-analytics/raw/main/staples_supply_chain.pbix" class="btn">⬇️ Download PBIX</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Supply Chain Analytics Portfolio | Built with Python, SQL, Power BI, and Git</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">For more projects, visit <a href="https://github.com/kaushikgovindu" style="color: #2d5a8c;">GitHub</a></p>
+    </footer>
+</body>
+</html>
